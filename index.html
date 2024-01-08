@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Lukashchuk</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- portfolio body here -->
+    <div class="glow-container"></div>
+    <script src="script.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="left-text">
+            <!-- left column -->
+            <p class="my-intro">Hi, my name is</p>
+            <h2 class="my-name">Andrew Lukashchuk</h2>
+            <h3>Student at the University of Pennsylvania</h3>
+            <p>
+              I'm a third-year student at the University of Pennsylvania studying computer science and mathematics 
+              with a full scholarship through the Mayor's Scholars Program. I am involved in many parts of 
+              campus, including new student orientation, Greek life, and athletics.
+            </p>
+            <div class="social">
+              <a href="https://github.com/lukashchu" class="icon">
+                <img src="icons/github.svg" alt="GitHub Icon">
+              </a>
+              <a href="https://www.linkedin.com/in/andrewlukashchuk/" class="icon">
+                <img src="icons/linkedin.svg" alt="LinkedIn Icon">
+              </a>
+              <a href="https://www.facebook.com/lukashchu/" class="icon">
+                <img src="icons/facebook.svg" alt="Facebook Icon">
+              </a>
+            </div>
+            <div class = "blank-space"></div>
+            <img src="images/philadelphia.png" alt="Philadelphia Skyline">
+          </div>
+        </div>
+        <div class="column">
+          <div class="right-text">
+            <!-- right column -->
+            <br>
+            <p>
+              Growing up, I was always interested in computers and enjoyed playing around with them. I received my first device when 
+              I was 10 years old, and it was a Kindle Fire tablet. This kickstarted my interest in messing around with technology, 
+              and I began to change various aspects of it by installing a custom bootloader and custom ROMs. 
+            </p>
+            <p>
+              This interest in technology continued
+              to grow, and I ended up building a gaming computer when I was 14. Doing research on the various parts and their purpose
+              within the machine made me much more interested in the topic of computers. It drove me to desire to create my own software
+              and computer programs, which led me to learn Java independently in high school. This newfound knowledge allowed me to create
+              my first mobile application as a sophomore in high school, which I was able to publish to the Google Play Store and monetize
+              through advertisements. After watching this application quickly grow in downloads and gain positive reviews, my interest in 
+              the field of computer science would only continue to grow.
+            </p>
+            <p>
+              As I entered college, I decided to pursue a degree in computer science because of this great interest in the field. I have
+              had the pleasure of learning about many different topics in the field, including the theoretical and practical aspects of
+              computer science. I have been able to delve deeper into specific topics such as databases, algorithms, data structures, and 
+              data science in my coursework. Throughout my courses, I have worked on various projects which have strengthened my skills 
+              and knowledge in the field. Yet, there remains so much to learn and explore, which is the beauty of the field. I am excited
+              to continue to learn and grow in the field of computer science and to see where it takes me.
+            </p>
+            <div class = "blank-space"></div>
+            <h2>Projects</h2>
+            <a href="https://penntravelplanner.netlify.app/" class="block-container">
+              <h3>DestiMate</h3>
+              <h4>September 2023 - December 2023</h4>
+              <p>
+                With a group of 4 students, we implemented a web application using a MySQL database and React that allows 
+                users to input their travel preferences, including any budget constraints and temperature preferences. Given 
+                theses preferences, the web application generated appropriate trip iteneraries for the user, including flights 
+                and lodging, allowing the user to add the optimal ones to their user cart.
+              </p>
+            </a>
+            <br>
+            <a href="#" class="block-container">
+              <h3>PennOS</h3>
+              <h4>September 2023 - December 2023</h4>
+              <p>
+                A fully fledged operating system created in the C programming language. Contained different components
+                including a shell, a file system, and system scheduler. The system scheduler was implemented using a round
+                robin scheduling algorithm. The various components were integrated into one final fully operational operating
+                system created in a group of 4 students.
+              </p>
+            </a>
+            <br>
+            <a href="https://github.com/lukashchu/flightcancellations" class="block-container">
+              <h3>Analyzing Flight Cancellations</h3>
+              <h4>November 2023 - December 2023</h4>
+              <p>
+                A Jupyter Notebook which uses various modeling and exploratory data analysis techniques to analyze flight patterns
+                and predict flight cancellations based on factors such as the date and time of the flight, the airline, and the
+                origin and destination airports. The notebook was created in a group of 3 students and uses the libaries pandas,
+                numpu, sklearn, matplotlib, tensorflow, seaborn, and plotly.
+              </p>
+            </a>
+            <br>
+            <a href="https://github.com/lukashchu/compiler" class="block-container">
+              <h3>J Compiler</h3>
+              <h4>November 2022 - December 2022</h4>
+              <p>
+                A compiler designed for a simple functional language called J. The compiler brought the J language code down to 
+                ARM assembly code, which could then easily be assembled and ran on the machine. The compiler was independently 
+                created in a virtual machine and developed in the C programming language. An accompanying assembler and disassembler 
+                were also created to allow for easy debugging of the compiler.
+              </p>
+            </a>
+            <br>
+            <a href="https://github.com/lukashchu/snake-game" class="block-container">
+              <h3>Snake Game</h3>
+              <h4>December 2022</h4>
+              <p>
+                Playable snake game independently created in the Java programming language. The game was created using the Java Swing
+                library and uses a simple GUI to allow the user to play the game. The game also includes a high score system which
+                tracks the user high score across sessions and stores it in the JAR executable.
+              </p>
+            </a>
+            <br>
+            <a href="https://github.com/lukashchu/2048-game" class="block-container">
+              <h3>2048 Game and Solver</h3>
+              <h4>April 2022 - May 2022</h4>
+              <p>
+                Playable 2048 Game which was designed independently in Java using the PennDraw library to provide graphical interface. 
+                Built with a self-solver based on a heuristic scoring algorithm which ranks the possible moves and choses the best one 
+                based on possible outcomes. This self-solver can be ran with the game to beat it optimally, and the algorithm can also 
+                be used to provide hints to the user for the optimal move when playing normally.
+              </p>
+            </a>
+            <br>
+            <a href="https://play.google.com/store/apps/details?id=com.tozinapp.TF2RandomLoadoutPicker" class="block-container">
+              <h3>Random Loadout Generator - TF2</h3>
+              <h4>December 2018 - March 2019</h4>
+              <p>
+                Mobile application for Android devices published in 2019 which quickly amassed over 10,000 downloads shortly after 
+                its launch and a consistently high rating of over 4 stars with over 100 reviews. The application was created in Java
+                using Android Mobile Studio and was designed to allow users to quickly generate random loadouts for the popular game
+                Team Fortress 2. The application was monetized through ads and in-app purchases. 
+              </p>
+            </a>
+            <div class = "blank-space"></div>
+            <a href="https://lukashchu.github.io/resume/" class="hyperlink">
+              View My Résumé
+            </a>
+            <div class = "blank-space"></div>
+            <p>
+              Feel free to reach out to me at <a href="mailto:aluk@seas.upenn.edu" class="email">aluk@seas.upenn.edu</a>.
+            </p>
+            <div class = "blank-space"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

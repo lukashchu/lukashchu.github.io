@@ -1,0 +1,160 @@
+  body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  }
+  
+  .glow-container {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    background: rgba(0, 0, 255, 0);
+
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease-out, background-color 0.3s ease-out;
+
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.15) 15%, rgba(0, 0, 255, 0) 50%);
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .column {
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+
+  .left-text {
+    position: fixed;
+    top: 60px;
+    right: 52%;
+    bottom: 0;
+    width: 30%;
+    max-width: 570px;
+  }
+
+  .left-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .right-text {
+    position: relative;
+    top: 60px;
+    left: 4%;
+    bottom: 0;
+    width: 62.5%;
+    max-width: 570px;
+  }
+
+
+  .my-name {
+    font-size: 48px;
+    margin-bottom: -10px;
+  }
+
+  .my-intro {
+    margin-bottom: -40px;
+  }
+  
+  strong, b, h2, h3 {
+    color: rgb(0, 0, 204);
+  }
+
+  .blank-space {
+    height: 60px;
+  }
+
+  .social {
+    position: relative;
+    top: 60px;
+    width: 100%;
+  }
+
+  .hyperlink {
+    color: rgb(0, 0, 204);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .hyperlink:hover {
+    color: rgb(0, 0, 255);
+  }
+
+  .email {
+    color: rgb(0, 0, 204);
+    text-decoration: none;
+  }
+
+  .email:hover {
+    color: rgb(0, 0, 255);
+  }
+
+  .icon {
+    filter: invert(8%) sepia(98%) saturate(7498%) hue-rotate(242deg) brightness(76%) contrast(155%);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .icon:hover {
+    filter: invert(8%) sepia(99%) saturate(6386%) hue-rotate(247deg) brightness(113%) contrast(156%);
+  }
+
+  .block-container {
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    width: 100%;
+  }
+
+  .block-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  .block-container:hover::before {
+    border-color: #0000ff;
+  }
+
+  .block-container h3 {
+    margin-bottom: 0
+  }
+  
+  .block-container h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .block-container p {
+    margin-top: 5px;
+  }
+  
