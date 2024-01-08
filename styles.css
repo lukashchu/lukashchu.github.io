@@ -64,7 +64,7 @@
 
 
   .my-name {
-    font-size: 48px;
+    font-size: 3em;
     margin-bottom: -10px;
   }
 
@@ -157,4 +157,29 @@
   .block-container p {
     margin-top: 5px;
   }
+
+  .no-page {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    grid-gap: 10px;
+  }  
+
+  .no-page h2 {
+    font-size: 4em;
+  }  
+
+  .small-margins {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .med-margins {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .no-text {
+    text-align: center;
+}
   
