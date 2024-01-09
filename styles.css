@@ -26,7 +26,6 @@
   .row {
     display: flex;
     justify-content: space-between;
-    
   }
 
   .column {
@@ -39,7 +38,7 @@
 
   .left-text {
     position: fixed;
-    top: 60px;
+    top: 3.75em;
     right: 52%;
     bottom: 0;
     width: 30%;
@@ -55,21 +54,23 @@
 
   .right-text {
     position: relative;
-    top: 60px;
+    top: 3.75em;
     left: 4%;
     bottom: 0;
     width: 62.5%;
     max-width: 570px;
   }
 
+  
+
 
   .my-name {
     font-size: 3em;
-    margin-bottom: -10px;
+    margin-bottom: -0.2em;
   }
 
   .my-intro {
-    margin-bottom: -40px;
+    margin-bottom: -2.5em;
   }
   
   strong, b, h2, h3 {
@@ -77,12 +78,12 @@
   }
 
   .blank-space {
-    height: 60px;
+    height: 3.75em;
   }
 
   .social {
     position: relative;
-    top: 60px;
+    top: 3.75em;
     width: 100%;
   }
 
@@ -109,9 +110,9 @@
   .icon {
     filter: invert(8%) sepia(98%) saturate(7498%) hue-rotate(242deg) brightness(76%) contrast(155%);
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.625em;
     background-size: cover;
     background-position: center;
   }
@@ -158,11 +159,81 @@
     margin-top: 5px;
   }
 
+  /* Media query for screens with a maximum width of 800 pixels */
+  @media only screen and (max-width: 800px) {
+    .glow-container {
+      width: 0;
+      height: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 1em;
+      box-sizing: initial;
+      height: 100vh;
+      width: 100vw - 2em;
+      overflow: hidden;
+    }
+    
+    .row {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: initial;
+      overflow-y: scroll;
+    }
+  
+    .column {
+      width: 100%;
+      box-sizing: initial;
+      height: auto;
+      overflow-y: initial;
+      max-height: initial;
+    }
+  
+    .left-text {
+      position: initial;
+      top: initial;
+      right: initial;
+      bottom: initial;
+      width: 100%;
+      max-width: initial;
+      padding-top: 2em;
+    }
+  
+    .left-text img {
+      max-width: 100% ;
+      height: initial;
+      display: initial;
+      margin: initial;
+    }
+  
+    .right-text {
+      position: relative;
+      top: initial;
+      left: initial;
+      bottom: initial;
+      width: 100%;
+      max-width: initial;
+    }  
+
+    .block-container {
+      padding: 0;
+    }
+  }
+
   .no-page {
     display: grid;
     place-items: center;
     height: 100vh;
-    grid-gap: 10px;
+    gap: 10px;
   }  
 
   .no-page h2 {
