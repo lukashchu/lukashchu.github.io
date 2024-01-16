@@ -52,6 +52,10 @@
     margin: 0 auto;
   }
 
+  .philadelphia {
+    display: none !important;
+  } 
+
   .right-text {
     position: relative;
     top: 3.75em;
@@ -60,9 +64,6 @@
     width: 62.5%;
     max-width: 570px;
   }
-
-  
-
 
   .my-name {
     font-size: 3em;
@@ -159,6 +160,13 @@
     margin-top: 5px;
   }
 
+  /* Media query for screens with a height greater than 900 pixels */
+  @media only screen and (min-height: 901px) {
+    .philadelphia {
+      display: block !important;
+    } 
+  }
+
   /* Media query for screens with a maximum width of 800 pixels */
   @media only screen and (max-width: 800px) {
     .glow-container {
@@ -214,6 +222,10 @@
       display: initial;
       margin: initial;
     }
+
+    .philadelphia {
+      display: block !important;
+    } 
   
     .right-text {
       position: relative;
@@ -252,5 +264,5 @@
 
   .no-text {
     text-align: center;
-}
+  }
   
