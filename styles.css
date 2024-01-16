@@ -224,7 +224,7 @@
     }
 
     .philadelphia {
-      display: block !important;
+      display: initial !important;
     } 
   
     .right-text {
